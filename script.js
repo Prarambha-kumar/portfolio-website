@@ -13,4 +13,4 @@ document.querySelector('.ui-button').addEventListener('click', () => {
 
 
 letmenu = document.querySelector('#menu-icon');
-let \navnar = document.querySelector('.nav-bar');
+let navnar = document.querySelector('.nav-bar');
