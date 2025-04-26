@@ -15,7 +15,6 @@
 
 :root {
     --bg-color: #1f1e1e;
-    /* --snd-bg-color: #ff0000; */
     --text-color: #b83333;
     --main-color: #dddddd;
 }
@@ -54,15 +53,16 @@ section{
 }
 
 .logo {
-    font-size: 3rem;
-    color: var(--main-color);
-    font-weight: 700;
     cursor:pointer;
     transition: 0.3s ease;
 }
 
 .logo:hover {
     transform: scale(1.05);
+}
+
+navbar{
+    margin: 0 !important;
 }
 
 .navbar a{
@@ -127,11 +127,11 @@ section{
 
 /* Project Section Code */
 .projects-img #first:nth-child(odd) {
-    transform: translateY(20px); /* Move odd images up */
+    transform: translateY(20px); 
 }
 
 .projects-img:nth-child(even) {
-    transform: translateY(-20px); /* Move even images down */
+    transform: translateY(-20px); 
 }
 
 .projects-img:hover{
@@ -189,14 +189,9 @@ span{
     
 }
 
-/* .about-content{
-    padding: 0 4rem;
-} */
-
 .about-content h2{
    text-align: left;
     line-height: 1.2;
-    /* padding: 0 rem; */
 }
 
  .about-content p{
@@ -282,7 +277,7 @@ span{
 }
 
 hr {
-    border: 1px dashed;      /* Removes the default border */
+    border: 1px dashed;
     height: 1px;       
     background-color: rgba(255, 255, 255, o.5);
     opacity: 0.6;
@@ -295,26 +290,24 @@ hr {
     padding: 2rem 0;
 }
 
+header{
+    visibility: hidden;
+}
+
 /* Loder Section */
-/* .loder {
+.loder {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #0e0e0e;
     display: flex;
     align-items: center;
     justify-content: center;
     animation: slideUp 1.7s ease-in-out forwards;
     z-index: 2;
 }
-
-.loading-text {
-    text-transform: uppercase;
-    font-size: 24px;
-    color: white;
-} */
 
 @keyframes slideUp {
     from {
@@ -324,22 +317,10 @@ hr {
         top: -100%;
     }
 }
+body.loaded .header {
+    visibility: visible;
 
 /* Media Queries */
-/* @media (max-width: 1200px) {
-    .home-text h1{
-        font-size: 8vw;
-    }
-    .home-text p{
-        font-size: 1.5rem;
-    }
-    .projects-img img{
-        width: 30vw;
-    }
-    .about-img img{
-        width: 40vw;
-    }
-} */
 
 @media (max-width: 1200px) {
     .html{
