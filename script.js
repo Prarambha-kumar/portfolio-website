@@ -10,3 +10,7 @@ window.addEventListener('load', () => {
 document.querySelector('.ui-button').addEventListener('click', () => {
     alert('UI Elements are shown!');
 });
+
+
+letmenu = document.querySelector('#menu-icon');
+let \navnar = document.querySelector('.nav-bar');
